@@ -13,10 +13,9 @@ class StarRate extends Component {
   }
     
   toggleState(){       
-    this.state.starValue>=this.props.rating?
+    if(this.state.starValue>=this.props.rating){
       this.setState({ clicked: !this.state.clicked })
-      :
-      this.setState({ clicked: this.state.clicked })
+    }      
     this.state.clicked&&this.props.rating===this.state.starValue?
       this.props.onChangeRate(0)
       :

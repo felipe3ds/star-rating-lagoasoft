@@ -6,20 +6,13 @@ class VoteBar extends Component {
     super(props); 
     this.state = {
       rating: this.props.rating
-    };
-    this.onChangeRate = this.onChangeRate.bind(this);
-  }
- 
-  onStarClick(rating) {    
-    this.onChangeRate(rating);
-    
-  } 
+    };    
+  }  
   
   onChangeRate(rating){    
     this.setState({rating: this.props.rating});
     this.props.onChangeRate(rating);        
-    this.setState({ rating: this.props.rating }, () => {
-      console.log(this.state.rating, 'rating');
+    this.setState({ rating: this.props.rating }, () => {      
     }); 
   }
 

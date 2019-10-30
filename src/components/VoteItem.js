@@ -6,16 +6,18 @@ import PhotoModal from './PhotoModal'
 class VoteItem extends Component {
   constructor(props) {      
     super(props);            
-    this.state = {
-      //rating: Math.round(1 + Math.random() * (5 - 1)),
-      rating: 3,
+    this.state = {      
+      rating: 0,
       addModalShow: false,
       starCount: 10
     }
     this.onChangeRate = this.onChangeRate.bind(this);
     
   }
-  
+  componentDidMount(){
+    //TODO: Remover esta ilustração
+    this.setState({rating: Math.round(0 + Math.random() * (this.state.starCount - 0))});
+  }
 
   onChangeRate(rating){
     this.setState({rating});
