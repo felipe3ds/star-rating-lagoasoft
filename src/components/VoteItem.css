@@ -1,5 +1,5 @@
 .vote-item{
-    border: 2px solid rgb(218, 215, 215);
+    border: 1px solid rgb(218, 215, 215);
     padding: 30px 20px 10px 20px;
     margin: 10px 10px 40px 10px;
     border-radius: 10px;
@@ -13,7 +13,7 @@
     
 }
 .vote-item img{
-    border-radius: 50px ;
+    border-radius: 30px ;
     -webkit-transition: border-radius 300ms; /* Safari prior 6.1 */
     transition: border-radius 300ms;
     width: 100%;

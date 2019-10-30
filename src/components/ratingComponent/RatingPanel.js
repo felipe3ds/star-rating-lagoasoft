@@ -6,8 +6,7 @@ class RatingPanel extends Component {
   constructor(props) {
     super(props);
  
-    this.state = {        
-        rating: this.props.rating,        
+    this.state = {                
         starCount:this.props.starCount        
     };    
   }

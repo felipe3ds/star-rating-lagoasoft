@@ -9,11 +9,8 @@ class VoteBar extends Component {
     };    
   }  
   
-  onChangeRate(rating){    
-    this.setState({rating: this.props.rating});
-    this.props.onChangeRate(rating);        
-    this.setState({ rating: this.props.rating }, () => {      
-    }); 
+  onChangeRate(rating){        
+    this.props.onChangeRate(rating);            
   }
 
   render() {    
