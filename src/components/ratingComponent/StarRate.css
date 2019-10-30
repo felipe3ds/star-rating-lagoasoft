@@ -1,0 +1,8 @@
+.icon-star-rate{
+    font-size:12px;
+    color: #333;
+}
+
+.icon-star-rate.active{
+    color: gold;
+}
